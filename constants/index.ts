@@ -101,20 +101,20 @@ export const Projects = [
     title: "Estructura de datos",
     text: "Este es unProyecto final. Cada perfil puede crear y buscar preguntas relacionadas con la materia, también se puede visitar los perfiles de los usuarios y el propio",
     src: "/Proyecto-Estructuras.png",
-    link: "https://estructuras-q-baa9admfg-rony-san.vercel.app/",
+    link: "https://estructuras-q-a.vercel.app/",
   },
-  {
-    title: "Modern Nextjs Portfolio",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "/WebPortfolio.png",
-    link: "https://uvyfx-hiaaa-aaaap-qhivq-cai.icp0.io/",
-  },
-  {
-    title: "Matrix themed Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "/Matrix.png",
-    link: "https://uvyfx-hiaaa-aaaap-qhivq-cai.icp0.io/",
-  },
+  // {
+  //   title: "Modern Nextjs Portfolio",
+  //   text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+  //   src: "/WebPortfolio.png",
+  //   link: "https://uvyfx-hiaaa-aaaap-qhivq-cai.icp0.io/",
+  // },
+  // {
+  //   title: "Matrix themed Website",
+  //   text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+  //   src: "/Matrix.png",
+  //   link: "https://uvyfx-hiaaa-aaaap-qhivq-cai.icp0.io/",
+  // },
 ];
 
 export const NavLinks = [

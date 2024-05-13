@@ -95,7 +95,7 @@ export default function Home() {
           data-aos-delay="500">
           <Image
             src={ProfilePhone.src}
-            alt={ProfilePhone.name}
+            alt={""}
             width={ProfilePhone.width}
             height={ProfilePhone.height}
             className="rounded-full border-4 border-white shadow-xl border-double shadow-purple-500/50 mix-blend-lighten"
