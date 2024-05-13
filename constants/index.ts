@@ -91,7 +91,7 @@ export const Socials = [
 export const Projects = [
   {
     title: "ParkQApp",
-    text: "Proyecto Ganador de la hackaton ICP 2024",
+    text: "Proyecto Ganador de la hackaton Colombia BlockChain ICP 2024",
     src: "/Hackaton.png",
     link: "https://uvyfx-hiaaa-aaaap-qhivq-cai.icp0.io/",
   },

@@ -236,7 +236,7 @@ export default function Home() {
             className=" mt-10 max-w-6xl
             ">
             {Projects.map((project, index) => (
-              <SwiperSlide key={index} className="px-20 py-10">
+              <SwiperSlide key={index} className="px-20 ">
                 <ProjectCard
                   key={index}
                   title={project.title}
