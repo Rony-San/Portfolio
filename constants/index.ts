@@ -78,16 +78,14 @@ export const ProfilePhone = {
 
 export const Socials = [
   {
-    name: "Discord",
-    src: "/instagram.svg",
+    name: "Linkedin",
+    src: "/Linkedin.svg",
+    link: "https://www.linkedin.com/in/rony-santiago/",
   },
   {
-    name: "Facebook",
-    src: "/facebook.svg",
-  },
-  {
-    name: "Instagram",
-    src: "/discord.svg",
+    name: "whatsApp",
+    src: "/github.svg",
+    link: "https://github.com/Rony-San",
   },
 ];
 export const Projects = [
@@ -99,22 +97,22 @@ export const Projects = [
   },
   {
     title: "Estructura de datos",
-    text: "Este es unProyecto final. Cada perfil puede crear y buscar preguntas relacionadas con la materia, también se puede visitar los perfiles de los usuarios y el propio",
+    text: "Este es un Proyecto final. Cada perfil puede crear y buscar preguntas relacionadas con la materia, también se puede visitar los perfiles de los usuarios y el propio",
     src: "/Proyecto-Estructuras.png",
     link: "https://estructuras-q-a.vercel.app/",
   },
-  // {
-  //   title: "Modern Nextjs Portfolio",
-  //   text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-  //   src: "/WebPortfolio.png",
-  //   link: "https://uvyfx-hiaaa-aaaap-qhivq-cai.icp0.io/",
-  // },
-  // {
-  //   title: "Matrix themed Website",
-  //   text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-  //   src: "/Matrix.png",
-  //   link: "https://uvyfx-hiaaa-aaaap-qhivq-cai.icp0.io/",
-  // },
+  {
+    title: "Modulo de cancelaciones U de A",
+    text: "Proyecto donde un usuario puede tener clases y el usuari odocente se encarga de cancelar una materia si el estudiante envia una petición de cancelación -> Front-only Pc-only",
+    src: "/Cancelaciones-U-de-A.png",
+    link: "https://fabrica-escuela-modulo-cancelacion-git-4dffa1-ronysans-projects.vercel.app/",
+  },
+  {
+    title: "Proyecto Lógica 3",
+    text: "En el problema aleatorio 2-SAT, Pc-only",
+    src: "/Proyecto-Lófica-3.png",
+    link: "https://logica-3-proyecto.vercel.app/",
+  },
 ];
 
 export const NavLinks = [

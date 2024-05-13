@@ -2,11 +2,12 @@
 
 import { Socials } from "@/constants";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="fixed top-0 z-[40] w-full h-[100px] bg-transparent flex justify-between items-center px-10 md:px-20">
+    <div className="fixed top-0 z-[40] w-full h-[100px] bg-transparent flex justify-between items-center lg:my-5 px-10 md:px-20">
       <div className="flex flex-row gap-3 items-center">
         <div className="relative"></div>
         <h1 className="text-white text-[25px] font-semibold">
@@ -17,15 +18,18 @@ const Navbar = () => {
         </h1>
       </div>
 
-      <div className="flex flex-row gap-5 mb-2">
+      <div className="flex flex-row gap-5 mb-2 text-white">
         {Socials.map((social) => (
-          <Image
-            key={social.name}
-            src={social.src}
-            alt={social.name}
-            width={28}
-            height={28}
-          />
+          // eslint-disable-next-line react/jsx-key
+          <Link href={social.link}>
+            <Image
+              key={social.name}
+              src={social.src}
+              alt={social.name}
+              width={38}
+              height={38}
+            />
+          </Link>
         ))}
       </div>
     </div>

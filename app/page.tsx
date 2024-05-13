@@ -10,6 +10,10 @@ import {
 } from "@/constants";
 import Image from "next/image";
 import "swiper/css";
+import { Pagination, Navigation } from "swiper/modules";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
 import Link from "next/link";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -84,13 +88,12 @@ export default function Home() {
           <p className="text-lg font-semibold text-gray-800">Cargando...</p>
         </div>
       )}
-
       {/* Inicio Celular */}
       <div
         id="homeSection"
         className=" grid grid-rows-2  items-center w-full h-full bg-cover bg-center  lg:hidden ">
         <div
-          className="w-full flex justify-center items-center mt-10  "
+          className="w-full flex justify-center items-center mt-10 mb-10  "
           data-aos="fade-up"
           data-aos-delay="500">
           <Image
@@ -102,7 +105,7 @@ export default function Home() {
           />
         </div>
         <div
-          className="   flex flex-col justify-center items-start gap-5 z-[10]  lg:max-w-[750px]  sm:w-45 mb-40 mx-5"
+          className="   flex flex-col justify-center items-start gap-5 z-[10]  lg:max-w-[750px]  sm:w-45 mb-52 mx-5"
           data-aos="fade-up">
           <h1 className="text-[40px] text-white font-semibold text-center">
             RONY SANTIAGO BAÑOL
@@ -119,17 +122,17 @@ export default function Home() {
       </div>
 
       {/* Inicio Pc */}
-      <div className=" items-center w-full h-full bg-cover bg-center hidden lg:flex">
+      <div className="lg:flex items-center  justify-between  w-full h-full bg-cover bg-center hidden ">
         <div
-          className="pl-20 md:pl-40 pb-56 md:pb-20 flex flex-col gap-5 z-[10]  lg:max-w-[750px]  sm:w-45 "
+          className="  w-2/4 items-center  ml-44   z-[10]  lg:max-w-[750px]    "
           data-aos="fade-up">
-          <h1 className="text-[50px] text-white font-semibold">
+          <h1 className=" text-left text-[50px] text-white font-semibold">
             RONY SANTIAGO BAÑOL
           </h1>
-          <h1 className=" text-[50px] text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
+          <h1 className=" mt-10 text-[50px] text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
             Desarrollador Web
           </h1>
-          <p className="text-gray-200 hidden md:block">
+          <p className="mt-5 text-gray-200 hidden md:block text-[20px] ">
             Ingeniero de sistemas con sólida formación en Desarrollo Full Stack
             y ciberseguridad. Especializado en la creación de aplicaciones web
             responsivas con implementación de APIs RESTful, priorizando la
@@ -139,21 +142,19 @@ export default function Home() {
           <div className="flex-col md:flex-row hidden md:flex gap-5 ">
             <button
               onClick={() => scrollingToDiv(proyectosRef)}
-              className="rounded-[20px] group relative bg-violet-500 hover:bg-violet-400 px-5 py-3 text-lg text-white max-w-[200px] ">
+              className="mt-10 rounded-[20px] group relative bg-violet-500 hover:bg-violet-400 px-5 py-3 text-lg text-white max-w-[200px] ">
               Mis Proyectos
             </button>
             <button
               onClick={() => scrollingToDiv(technologiesRef)}
-              className="rounded-[20px] group relative bg-transparent px-5 border border-white py-3 text-lg text-white max-w-[200px] hover:bg-violet-300 hover:text-black shadow-purple-500/50 ">
+              className="mt-10 rounded-[20px] group relative bg-transparent px-5 border border-white py-3 text-lg text-white max-w-[200px] hover:bg-violet-300 hover:text-black shadow-purple-500/50 ">
               Mis hábilidades
             </button>
-
-            {/* Utiliza la función scrollToProjects al hacer clic en el enlace */}
           </div>
         </div>
 
         <div
-          className="w-full flex justify-center items-center  "
+          className="w-2/4 flex justify-center items-center   "
           data-aos="fade-up"
           data-aos-delay="500">
           <Image
@@ -161,44 +162,47 @@ export default function Home() {
             alt={Profile.name}
             width={Profile.width}
             height={Profile.height}
-            className="rounded-full border-4 border-white shadow-xl border-double shadow-purple-500/50 mix-blend-lighten"
+            className="rounded-full border-4 border-white mx-24 shadow-xl border-double shadow-purple-500/50 mix-blend-lighten"
           />
         </div>
       </div>
       {/* ACÁAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA VA LA MIRAD */}
-
       {/* aquiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii */}
-
       {/* Este es el swipper para PhOne */}
       <div
         ref={proyectosRef}
         id="proyectosRef"
         className="  flex flex-col items-center justify-center  w-full h-screen bg-cover bg-center "
         style={{ backgroundImage: "url(/mountains.jpg)" }}>
-        <div className="flex flex-col items-center gap-4 w-full">
-          <h1 className="font-semibold items-center justify-center mb-5  text-white text-[50px]  ">
+        <div className="flex flex-col items-center gap-4 w-full ">
+          <h1 className=" items-center justify-center mb-5 text-[40px] lg:text-[50px] text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500  ">
             {" "}
-            Proyectos
+            PROYECTOS
           </h1>
-          <p className="text-gray-400 items-center justify-center  text-[20px] mx-10 mb-10">
+          <p className="text-gray-400 items-center justify-center text-[20px] lg:text-[25px] mx-10 mb-10">
             Estos son algunos de los proyectos que he realizado como
             desarrollador Frontend
           </p>
         </div>
-        <div className="w-[80%]  lg:hidden ">
+        <div className="w-[80%]  lg:hidden  mb-20">
           <Swiper
-            spaceBetween={5}
             slidesPerView={1}
             autoplay={{
               delay: 0,
-              disableOnInteraction: false,
-              reverseDirection: true,
+              disableOnInteraction: true,
+              reverseDirection: false,
             }}
-            speed={1000}
-            className=" mt-10
+            speed={1500}
+            pagination={{
+              type: "progressbar",
+              clickable: true,
+            }}
+            navigation={true}
+            modules={[Pagination, Navigation]}
+            className=" mt-10 
             ">
             {Projects.map((project, index) => (
-              <SwiperSlide key={index}>
+              <SwiperSlide key={index} className=" py-5 ">
                 <ProjectCard
                   key={index}
                   title={project.title}
@@ -212,20 +216,27 @@ export default function Home() {
         </div>
 
         {/* Este es el Swiper para Pc */}
-        <div className="w-[60%] hidden lg:flex ">
+        <div className="w-[80%] hidden lg:flex ">
           <Swiper
-            spaceBetween={5}
             slidesPerView={2}
+            // centeredSlidesBounds={true}
+            // centeredSlides={true}
             autoplay={{
               delay: 0,
-              disableOnInteraction: false,
-              reverseDirection: true,
+              disableOnInteraction: true,
+              reverseDirection: false,
             }}
-            speed={1000}
-            className=" mt-10 
+            speed={1500}
+            pagination={{
+              type: "progressbar",
+              clickable: true,
+            }}
+            navigation={true}
+            modules={[Pagination, Navigation]}
+            className=" mt-10 max-w-6xl
             ">
             {Projects.map((project, index) => (
-              <SwiperSlide key={index}>
+              <SwiperSlide key={index} className="px-20 py-10">
                 <ProjectCard
                   key={index}
                   title={project.title}
@@ -238,27 +249,24 @@ export default function Home() {
           </Swiper>
         </div>
       </div>
-
-      {/* Aqui está el swipper de los */}
-
+      {/* Aqui está el swipper de las habildiades */}
       <div
         ref={technologiesRef}
         id="Technologies"
         className=" flex flex-col items-center justify-center h-full bg-cover bg-center ">
-        <div className="flex flex-col items-center gap-5 ">
-          <h1 className=" font-semibold items-center justify-center text-white text-[30px] lg:text-[50px] mb-5">
-            Conocimientos
-            <p> </p>
+        <div className="flex flex-col  items-center gap-5 ">
+          <h1 className="w-full text-center font-semibold items-center justify-center text-white text-[30px] lg:text-[50px] mb-5">
+            CONOCIMIENTOS
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
               {" "}
               &{" "}
             </span>{" "}
-            Tecnologias
+            TECNOLOGIAS
           </h1>
 
-          <p className="text-gray-400 items-center justify-center  text-[20px] mx-10 ">
-            Estas son algunas de las tecnologias y Lenguajes de programación que
-            domino
+          <p className="text-gray-400 items-center justify-center  text-[20px] lg:text-[25px] mx-10 ">
+            Estas son algunas de las tecnologías y lenguajes de programación que
+            domino.
           </p>
         </div>
         <Swiper
@@ -308,7 +316,6 @@ export default function Home() {
           ))}
         </Swiper>
       </div>
-
       {/* Aqui el botonsito */}
       <div
         style={{ left: "25%" }}
