@@ -32,12 +32,11 @@ export const SkillData = [
     height: 80,
   },
   {
-    name: "Redux",
-    Image: "/redux.png",
+    name: "mysql",
+    Image: "/mysql.png",
     width: 80,
     height: 80,
   },
-
   {
     name: "TypeScript",
     Image: "/ts.png",
@@ -47,18 +46,6 @@ export const SkillData = [
   {
     name: "Next js 13",
     Image: "/next.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    name: "Framer Motion",
-    Image: "/framer.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    name: "Stripe Payment",
-    Image: "/stripe.webp",
     width: 80,
     height: 80,
   },
@@ -76,6 +63,19 @@ export const SkillData = [
   },
 ];
 
+export const Profile = {
+  name: "Perfil",
+  src: "/perfil.png",
+  width: 400,
+  height: 300,
+};
+export const ProfilePhone = {
+  name: "Perfil",
+  src: "/perfil.png",
+  width: 200,
+  height: 200,
+};
+
 export const Socials = [
   {
     name: "Discord",
@@ -92,24 +92,28 @@ export const Socials = [
 ];
 export const Projects = [
   {
-    title: "Modern Nextjs Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "/NextWebsite.png",
+    title: "ParkQApp",
+    text: "Proyecto Ganador de la hackaton ICP 2024",
+    src: "/hackatonDark.jpg",
+    link: "https://uvyfx-hiaaa-aaaap-qhivq-cai.icp0.io/",
   },
   {
-    title: "Space Themed Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "/SpaceWebsite.png",
+    title: "Estructura de datos",
+    text: "Este es unProyecto final. Cada perfil puede crear y buscar preguntas relacionadas con la materia, también se puede visitar los perfiles de los usuarios y el propio",
+    src: "/Proyecto-Estructuras.png",
+    link: "https://estructuras-q-baa9admfg-rony-san.vercel.app/",
   },
   {
     title: "Modern Nextjs Portfolio",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
     src: "/WebPortfolio.png",
+    link: "https://uvyfx-hiaaa-aaaap-qhivq-cai.icp0.io/",
   },
   {
     title: "Matrix themed Website",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
     src: "/Matrix.png",
+    link: "https://uvyfx-hiaaa-aaaap-qhivq-cai.icp0.io/",
   },
 ];
 
@@ -117,21 +121,16 @@ export const NavLinks = [
   {
     name: "/",
     icon: RxHome,
-    link: "/",
+    link: "homeSection", // Identificador único para la sección de inicio
   },
   {
     name: "/my-skills",
     icon: RxPerson,
-    link: "/my-skills",
+    link: "proyectosRef", // Identificador único para la sección de habilidades
   },
   {
     name: "/my-projects",
     icon: RxDashboard,
-    link: "/my-projects",
-  },
-  {
-    name: "/contact-me",
-    icon: RxClipboard,
-    link: "/contact-me",
+    link: "Technologies", // Identificador único para la sección de proyectos
   },
 ];
