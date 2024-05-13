@@ -94,7 +94,7 @@ export const Projects = [
   {
     title: "ParkQApp",
     text: "Proyecto Ganador de la hackaton ICP 2024",
-    src: "/hackatonDark.jpg",
+    src: "/HackatonDark.jpg",
     link: "https://uvyfx-hiaaa-aaaap-qhivq-cai.icp0.io/",
   },
   {
