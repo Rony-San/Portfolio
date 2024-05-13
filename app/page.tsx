@@ -175,11 +175,11 @@ export default function Home() {
         className="  flex flex-col items-center justify-center  w-full h-screen bg-cover bg-center "
         style={{ backgroundImage: "url(/mountains.jpg)" }}>
         <div className="flex flex-col items-center gap-4 w-full ">
-          <h1 className=" text-white font-bold items-center mt-5 justify-center mb-5 text-[30px] lg:text-[50px] text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500   ">
+          <h1 className=" mt-2 text-white font-bold items-center justify-center text-[30px] lg:text-[50px] text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500   ">
             {" "}
             PROYECTOS
           </h1>
-          <p className="text-gray-400 items-center justify-center text-[15px] lg:text-[25px] mx-10 mb-15">
+          <p className="text-gray-400 items-center justify-center text-[20px] lg:text-[25px] mx-10 ">
             Estos son algunos de los proyectos que he realizado como
             desarrollador Frontend
           </p>
@@ -202,7 +202,7 @@ export default function Home() {
             className=" mt-10 
             ">
             {Projects.map((project, index) => (
-              <SwiperSlide key={index} className="  ">
+              <SwiperSlide key={index} className=" py-5 ">
                 <ProjectCard
                   key={index}
                   title={project.title}
@@ -236,7 +236,7 @@ export default function Home() {
             className=" mt-10 max-w-6xl
             ">
             {Projects.map((project, index) => (
-              <SwiperSlide key={index} className="px-20 ">
+              <SwiperSlide key={index} className="px-20 py-10">
                 <ProjectCard
                   key={index}
                   title={project.title}
@@ -264,7 +264,7 @@ export default function Home() {
             TECNOLOGIAS
           </h1>
 
-          <p className="text-gray-400 items-center justify-center  text-[15px] lg:text-[25px] mx-10 ">
+          <p className="text-gray-400 items-center justify-center  text-[20px] lg:text-[25px] mx-10 ">
             Estas son algunas de las tecnologías y lenguajes de programación que
             domino.
           </p>
@@ -303,7 +303,7 @@ export default function Home() {
           }}
           speed={5000}
           modules={[Autoplay]}
-          className="max-w-[80%] lg:mt-20 ">
+          className="max-w-[80%] mt-20 ">
           {SkillData.map((skill, index) => (
             <SwiperSlide key={index}>
               <Image

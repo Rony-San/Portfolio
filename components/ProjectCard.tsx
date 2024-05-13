@@ -52,7 +52,6 @@ const ProjectCard = ({ image, title, text, link }: Props) => {
             <div className="absolute bottom-0 left-0 mb-5 ml-5"></div>
           </div>
         </motion.div>
-        isFlipped?( )
       </div>
       <Link
         href={link}
