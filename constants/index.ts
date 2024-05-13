@@ -65,13 +65,13 @@ export const SkillData = [
 
 export const Profile = {
   name: "Perfil",
-  src: "/perfil.png",
+  src: "/Perfil.png",
   width: 400,
   height: 300,
 };
 export const ProfilePhone = {
   name: "Perfil",
-  src: "/perfil.png",
+  src: "/Perfil.png",
   width: 200,
   height: 200,
 };
@@ -94,7 +94,7 @@ export const Projects = [
   {
     title: "ParkQApp",
     text: "Proyecto Ganador de la hackaton ICP 2024",
-    src: "/HackatonDark.jpg",
+    src: "/Hackaton.png",
     link: "https://uvyfx-hiaaa-aaaap-qhivq-cai.icp0.io/",
   },
   {
