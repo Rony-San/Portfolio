@@ -93,7 +93,7 @@ export default function Home() {
         id="homeSection"
         className=" grid grid-rows-2  items-center w-full h-full bg-cover bg-center  lg:hidden ">
         <div
-          className="w-full flex justify-center items-center mt-10 mb-10  "
+          className="w-full flex justify-center items-center mt-5 mb-10  "
           data-aos="fade-up"
           data-aos-delay="500">
           <Image
@@ -105,15 +105,15 @@ export default function Home() {
           />
         </div>
         <div
-          className="   flex flex-col justify-center items-start gap-5 z-[10]  lg:max-w-[750px]  sm:w-45 mb-52 mx-5"
+          className="   flexjustify-center items-start gap-5 z-[10]  lg:max-w-[750px]  sm:w-45 mb-52 mx-5"
           data-aos="fade-up">
-          <h1 className="text-[40px] text-white font-semibold text-center">
+          <h1 className="text-[30px] text-white font-semibold text-left">
             RONY SANTIAGO BAÑOL
           </h1>
-          <h1 className=" text-[30px]  text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500 text-center">
+          <h1 className=" text-[30px]  text-left text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
             Desarrollador Web
           </h1>
-          <p className="text-gray-200  md:block">
+          <p className="text-gray-200 text-left mt-5 md:block text-[15px]">
             Ingeniero de sistemas con sólida formación en Desarrollo Full Stack
             y ciberseguridad. Especializado en la creación de aplicaciones web
             responsivas con implementación de APIs RESTful.
@@ -175,11 +175,11 @@ export default function Home() {
         className="  flex flex-col items-center justify-center  w-full h-screen bg-cover bg-center "
         style={{ backgroundImage: "url(/mountains.jpg)" }}>
         <div className="flex flex-col items-center gap-4 w-full ">
-          <h1 className=" items-center justify-center mb-5 text-[40px] lg:text-[50px] text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500  ">
+          <h1 className=" text-white font-bold items-center mt-5 justify-center mb-5 text-[30px] lg:text-[50px] text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500   ">
             {" "}
             PROYECTOS
           </h1>
-          <p className="text-gray-400 items-center justify-center text-[20px] lg:text-[25px] mx-10 mb-10">
+          <p className="text-gray-400 items-center justify-center text-[15px] lg:text-[25px] mx-10 mb-15">
             Estos son algunos de los proyectos que he realizado como
             desarrollador Frontend
           </p>
@@ -202,7 +202,7 @@ export default function Home() {
             className=" mt-10 
             ">
             {Projects.map((project, index) => (
-              <SwiperSlide key={index} className=" py-5 ">
+              <SwiperSlide key={index} className="  ">
                 <ProjectCard
                   key={index}
                   title={project.title}
@@ -264,7 +264,7 @@ export default function Home() {
             TECNOLOGIAS
           </h1>
 
-          <p className="text-gray-400 items-center justify-center  text-[20px] lg:text-[25px] mx-10 ">
+          <p className="text-gray-400 items-center justify-center  text-[15px] lg:text-[25px] mx-10 ">
             Estas son algunas de las tecnologías y lenguajes de programación que
             domino.
           </p>
@@ -303,7 +303,7 @@ export default function Home() {
           }}
           speed={5000}
           modules={[Autoplay]}
-          className="max-w-[80%] mt-20 ">
+          className="max-w-[80%] lg:mt-20 ">
           {SkillData.map((skill, index) => (
             <SwiperSlide key={index}>
               <Image

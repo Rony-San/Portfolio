@@ -72,8 +72,8 @@ export const Profile = {
 export const ProfilePhone = {
   name: "Perfil",
   src: "/Perfil.png",
-  width: 200,
-  height: 200,
+  width: 170,
+  height: 170,
 };
 
 export const Socials = [
